@@ -33,14 +33,14 @@ This is an independently processed dataset and is not an official BTS product.
 | --- | ---: |
 | Coverage | 2021-01 through 2026-05 |
 | Latest complete month | 2026-05 |
-| Generated (UTC) | 2026-07-20T11:58:16+00:00 |
+| Generated (UTC) | 2026-08-05T13:10:58+00:00 |
 | Official source partitions | 65 |
 | Source rows before deduplication | 36,533,897 |
 | Cleaned flight rows | 36,533,897 |
 | Exact duplicate flight keys removed | 0 |
 | Aggregate rows | 4,556,244 |
 | Parquet files | 2,667 |
-| Aggregate bytes | 131,053,164 |
+| Aggregate bytes | 131,185,396 |
 
 The top-level `manifest.json` records table paths, row counts, file sizes, SHA-256 checksums,
 airport labels, carrier display labels, route coverage, and the active version. `catalog.json`
