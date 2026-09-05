@@ -31,16 +31,16 @@ This is an independently processed dataset and is not an official BTS product.
 
 | Property | Value |
 | --- | ---: |
-| Coverage | 2021-01 through 2026-05 |
-| Latest complete month | 2026-05 |
-| Generated (UTC) | 2026-08-05T13:10:58+00:00 |
-| Official source partitions | 65 |
-| Source rows before deduplication | 36,533,897 |
-| Cleaned flight rows | 36,533,897 |
+| Coverage | 2021-01 through 2026-06 |
+| Latest complete month | 2026-06 |
+| Generated (UTC) | 2026-09-05T13:58:25+00:00 |
+| Official source partitions | 66 |
+| Source rows before deduplication | 37,141,474 |
+| Cleaned flight rows | 37,141,474 |
 | Exact duplicate flight keys removed | 0 |
-| Aggregate rows | 4,556,244 |
-| Parquet files | 2,667 |
-| Aggregate bytes | 131,185,396 |
+| Aggregate rows | 4,611,415 |
+| Parquet files | 2,674 |
+| Aggregate bytes | 132,927,852 |
 
 The top-level `manifest.json` records table paths, row counts, file sizes, SHA-256 checksums,
 airport labels, carrier display labels, route coverage, and the active version. `catalog.json`
@@ -114,7 +114,7 @@ SELECT
   100.0 * cancelled_flights / scheduled_flights AS cancellation_rate,
   p90_arrival_delay,
   observations
-FROM read_parquet('v2026-05/route_airline_comparison/origin=JFK/*.parquet')
+FROM read_parquet('v2026-06/route_airline_comparison/origin=JFK/*.parquet')
 WHERE destination = 'LAX'
   AND calendar_month = 12
   AND departure_time_band = 'Morning'
